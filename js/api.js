@@ -51,10 +51,10 @@ const displayPost = AllPost => {
                         <p>${post.posted_time} min</p>
                     </div>
                 </div>
-
-                <div class="bg-[#10B981] h-[27px] w-[27px] text-center rounded-full mt-5">
-                    <i class="fa-regular fa-envelope mt-[6px]"></i>
-                </div>
+                <button id="button1" onclick="no1()"><div class="bg-[#10B981] h-[27px] w-[27px] text-center rounded-full mt-5">
+                <i class="fa-regular fa-envelope mt-[6px]"></i>
+            </div></button>
+                
             </div>
         </div>
     </div>`
