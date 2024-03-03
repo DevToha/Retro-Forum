@@ -14,3 +14,10 @@
     border-top: 2px dashed;
     border-color: rgba(18, 19, 45, 0.25);
 }
+
+/* <th class="text-xl font-bold text-black">Title</th>
+
+                                    <td class="text-base font-medium text-[#12132D99]" colspan="2" style="text-align: right">
+                                        <span><i class="fa-solid fa-check-double text-[#1dd100] mr-4"></i></span>Mark as read
+                                        <span>(4)</span>
+                                    </td> */
