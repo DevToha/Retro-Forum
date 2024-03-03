@@ -1,0 +1,16 @@
+
+.font-manrope{
+    font-family: 'Manrope', sans-serif;
+}
+
+
+#verticle-line {
+    height: 2px;
+    width: 825px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.dashed{
+    border-top: 2px dashed;
+    border-color: rgba(18, 19, 45, 0.25);
+}

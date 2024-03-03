@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+
+    <!-- style link  -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- daisy ui / -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/d41afb0b41.js" crossorigin="anonymous"></script>
+
+    <!-- google font manrope  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<!-- body  -->
+
+<body class="font-manrope lg:max-w-[1300px] w-auto md:mx-auto">
+    <!-- header  -->
+    <header id="header-hidden" class="lg:max-w-[1300px] w-auto md:mx-auto">
+        <!-- nav bar -->
+        <nav class="mb-7 mt-10">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <!-- <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div> -->
+                    <a class="text-black font-extrabold text-4xl">Re<span class="text-[#797dfc]">T</span>ro</a>
+                </div>
+                <div class="">
+                    <div class="lg:inline md:hidden hidden">
+                        <div class="flex gap-4 pr-4 ">
+                            <!-- <div id="tooltip"
+                                class="bg-gray-200 border-black border-2 h-[40px] w-[40px] rounded-full text-center">
+                                <i class="fa-solid fa-house pt-2 "></i>
+                                <span id="tool-tip-text" class="font-medium text-base text-green-500">Home</span>
+                            </div>
+                            <div id="tooltip"
+                                class=" bg-gray-200 border-black border-2 h-[40px] w-[40px] rounded-full text-center">
+                                <i class="fa-solid fa-pencil pt-3"></i>
+                                <span id="tool-tip-text" class="font-medium text-base text-green-500">Tooltip</span>
+                            </div>
+                            <div id="tooltip"
+                                class=" bg-gray-200 border-black border-2 h-[40px] w-[40px] rounded-full text-center">
+                                <i class="fa-solid fa-user-plus pt-3"></i>
+                                <span id="tool-tip-text" class="font-medium text-base text-green-500">Add</span>
+                            </div>
+                            <div id="tooltip"
+                                class=" bg-gray-200 border-black border-2 h-[40px] w-[40px] rounded-full text-center">
+                                <i class="fa-regular fa-flag pt-3"></i>
+                                <span id="tool-tip-text" class="font-medium text-base text-green-500">Flag</span>
+                            </div> -->
+
+                            <ul class="menu menu-horizontal">
+                                <li>
+                                    <a class="tooltip" data-tip="Home">
+                                        <div
+                                            class=" bg-gray-200 border-gray-300 border-2 h-[40px] w-[40px] rounded-full text-center">
+                                            <i class="fa-solid fa-house pt-2 "></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tooltip" data-tip="Tooltip">
+                                        <div
+                                            class=" bg-gray-200 border-gray-300 border-2 h-[40px] w-[40px] rounded-full text-center">
+                                            <i class="fa-solid fa-pencil pt-3"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tooltip" data-tip="Add">
+                                        <div
+                                            class=" bg-gray-200 border-gray-300 border-2 h-[40px] w-[40px] rounded-full text-center">
+                                            <i class="fa-solid fa-user-plus pt-3"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tooltip" data-tip="Flag">
+                                        <div
+                                            class=" bg-gray-200 border-gray-300 border-2 h-[40px] w-[40px] rounded-full text-center">
+                                            <i class="fa-regular fa-flag pt-3"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button
+                        class="gap-2 flex font-semibold text-[17px] w-[120px] h-[40px] px-4 rounded-3xl items-center justify-center text-white text-center bg-[#797dfc]">
+                        Sign In
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar close  -->
+
+        <!-- banner section  -->
+        <section>
+
+            <div class="hero h-[480px] rounded-3xl bg-[#12132D]" style="background-image: url(./images/bgbanner.png)">
+
+                <div class="flex gap-52">
+                    <div class="lg:space-y-9">
+
+                        <h1 class="text-white text-5xl font-extrabold">
+                            Welcome to the <br>
+                            <p class="mt-4"><span class="text-[#797DFC]">ReTro</span> Forum</p>
+                        </h1>
+                        <p class="mb-5 text-gray-300">
+                            Share your favorite opinion and win and wp <br> forum coffee mug!
+                        </p>
+                        <div class="input mt-2 bg-gray-100 flex items-center rounded-3xl gap-2">
+                            <input type="text" class="grow" placeholder="Search here anything" />
+                            <button
+                                class="w-[88px] h-[38px] text-white text-base pb-1 font-semibold rounded-3xl bg-[#797dfc]">
+                                Search
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-white w-[320px] h-[250px] rounded-2xl">
+                        <div class="px-14 ">
+                            <div class="flex gap-10 my-6 mt-10 font-medium text-base">
+                                <p>Registered Users</p>
+                                <p>01</p>
+                            </div>
+                            <div class="flex gap-[120px] my-6 font-medium text-base">
+                                <p>Forum</p>
+                                <p>05</p>
+                            </div>
+                            <div class="flex gap-[120px] my-6 font-medium text-base">
+                                <p>Topics</p>
+                                <p>01</p>
+                            </div>
+                            <div class="flex gap-[115px] my-6 font-medium text-base">
+                                <p>Replies</p>
+                                <p>01</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- banner close  -->
+    </header>
+    <!-- main  -->
+    <main>
+        <!-- Let’s Discuss section  -->
+        <section class="mt-20">
+            <div class="text-center">
+                <h3 class="font-black text-4xl mb-7">Let’s Discuss</h3>
+                <p class="text-gray-500 text-base font-normal mb-10">Yes, you can run unit tests and view the results
+                    directly
+                    within the app. The <br> integrated testing
+                    features allow for a streamlined .</p>
+            </div>
+
+            <div id="post-container">
+                <!-- <div class=" flex gap-8 justify-center rounded-2xl lg:w-[742px] lg:h-[250px] bg-[#F3F3F5]">
+
+
+
+                        <div class="indicator mt-9">
+                            <span class="indicator-item mt-2 mr-2 badge bg-red-600"></span>
+                            <div class="grid w-[75px] h-[70px] bg-base-300 place-items-center rounded-xl"><img src=""
+                                    alt=""></div>
+                        </div>
+
+
+
+                        <div class="mt-[15px]">
+                            <div class=" lg:pt-6 pt-7 ml-4 lg:mb-0 mb-5">
+                                <div class="flex items-center gap-6 mb-2">
+                                    <div class="flex gap-4 items-center">
+                                        <p class="font-medium"># Coding</p>
+                                    </div>
+                                    <div class="flex gap-4 items-center">
+                                        <p class="font-medium">Author : Safia Chowdhury</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="card-title font-extrabold text-[20px] mb-2">10 Kids Unaware of Their
+                                        Halloween Costume
+                                    </h2>
+                                    <p class="mb-2 w-[552px]">It’s one thing to subject yourself to ha Halloween
+                                        costume mishap
+                                        because, <br> hey that’s your prerogative</p>
+                                </div>
+                                <div class="flex dashed justify-between mt-5">
+                                    <div class="flex items-center gap-8 mb-2 mt-5">
+                                        <div class="flex gap-3 items-center">
+                                            <i class="fa-solid fa-message"></i>
+                                            <p>560</p>
+                                        </div>
+                                        <div class="flex gap-3 items-center">
+                                            <i class="fa-regular fa-eye"></i>
+                                            <p>1568</p>
+                                        </div>
+                                        <div class="flex gap-3 items-center">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <p>5 min</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-[#10B981] h-[27px] w-[27px] text-center rounded-full mt-5">
+                                        <i class="fa-regular fa-envelope mt-[6px]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </section>
+
+        <!-- Let’s Discuss section close  -->
+
+        <!-- Join Our Forum  -->
+
+        <section class="mt-16">
+            <div class="hero flex justify-between bg-[#12132d] w-[] h-[370px] rounded-3xl">
+                <div class="ml-32">
+                    <h2 class="font-black text-4xl text-white mb-6">Join Our Forum</h2>
+                    <p class="text-gray-400 mb-6">Share your favorite opinion and win and wp forum coffee mug! Yes, you
+                        can
+                        <br> run unit tests and view the results directly within the app.
+                    </p>
+                    <button
+                        class="gap-2 flex font-semibold text-[17px] w-[200px] h-[45px] px-4 rounded-3xl items-center justify-center text-white text-center bg-[#797dfc]">
+                        Registered Now
+                    </button>
+                </div>
+
+                <div class="mr-9">
+                    <img src="images/joinforum.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Posts section  -->
+
+        <section class="mt-20">
+            <div class="text-center">
+                <h3 class="font-black text-4xl mb-7">Latest Posts</h3>
+                <p class="text-gray-500 text-base font-normal mb-10">Yes, you can run unit tests and view the results
+                    directly
+                    within the app. The <br> integrated testing
+                    features allow for a streamlined .</p>
+            </div>
+
+            <!-- main part  -->
+
+
+            <div id="latest-post-container" class="flex gap-[15px]">
+                
+                <!-- <div class=" rounded-3xl lg:w-[423px] h-[470px] border gap-10 ">
+                    <div class="indicator mt-9 ml-[35px]">
+                        <div class="grid w-[335px] h-[190px] bg-[#12132D08] place-items-center rounded-2xl"><img src=""
+                                alt=""></div>
+                    </div>
+                    <div class="justify-center items-center ml-[18px]">
+                        <div class=" lg:pt-6 pt-7 ml-4 lg:mb-0 mb-5">
+                            <div class=" flex gap-2 items-center">
+                                <i class="fa-regular fa-calendar"></i>
+                                <p class="text-gray-500">29 January 2024</p>
+                            </div>
+                            <div>
+                                <h2 class="card-title font-extrabold text-[20px] mb-2">What will a mars habitat
+                                    force
+                                    that impact in our daily life!!!
+                                </h2>
+                                <p class="mb-2 text-gray-500">Yes, you can run unit tests and view the results
+                                    directly within the
+                                    app. </p>
+                            </div>
+
+                            <div class="flex gap-3 items-center">
+                                <div class="bg-base-300 w-[50px] h-[48px] rounded-full">
+                                    <img src="" alt="">
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-lg">Cameron Williamson</h5>
+                                    <p class="text-gray-500">Unknown</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer   -->
+
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-20">
+        <nav class="">
+            <h3 class="font-black text-4xl">Re<span class="text-[#797dfc]">T</span>ro</h3>
+        </nav>
+        <nav class="">
+            <p class="text-gray-500">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                <br> in a piece of
+                classical Latin literature from 45 BC
+            </p>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-4">
+                <img src="images/icons8-twitter-30.png" alt="">
+                <img src="images/icons8-facebook-30.png" alt="">
+                <img src="images/icons8-instagram-30.png" alt="">
+                <img src="images/icons8-github-30.png" alt="">
+
+            </div>
+        </nav>
+        <aside>
+            <div id="verticle-line"></div>
+            <p class="text-gray-500 mt-7">2017, All Rights Reserved.</p>
+        </aside>
+
+    </footer>
+
+    <!-- script  -->
+    <script src="js/api.js"></script>
+    <script src="js/latest-post-api.js"></script>
+</body>
+
+</html>
