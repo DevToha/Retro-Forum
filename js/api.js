@@ -11,13 +11,13 @@ const displayPost = AllPost => {
 
     AllPost.forEach((post, index) => {
         const postCard = document.createElement('div');
-        postCard.classList = `flex gap-8 justify-center rounded-2xl lg:w-[790px] lg:h-[250px] bg-[#F3F3F5] mb-8`;
+        postCard.classList = `lg:flex gap-8 justify-center rounded-2xl lg:w-[742px] w-[450px] lg:h-[250px] bg-[#F3F3F5] pb-1`;
 
         const buttonId = `button-${index}`;
         const buttonClickFunction = `handleButtonClick${index + 1}()`;
 
         postCard.innerHTML = `
-            <div class="indicator mt-9">
+            <div class="indicator mt-9 lg:ml-0 ml-40">
                 <span class="indicator-item mt-1 mr-2 badge ${post.isActive ? "bg-green-500" : "bg-red-500"}"></span>
                 <div class="grid w-[75px] h-[70px] bg-base-300 place-items-center rounded-xl">
                     <img class="rounded-xl" src="${post.image}" alt="">
@@ -36,9 +36,9 @@ const displayPost = AllPost => {
                     </div>
                     <div>
                         <h2 class="card-title font-extrabold text-[20px] mb-2">${post.title}</h2>
-                        <p class="mb-2 w-[552px]">${post.description}</p>
+                        <p class="mb-2 lg:w-[552px] w-auto">${post.description}</p>
                     </div>
-                    <div class="flex dashed justify-between mt-5">
+                    <div class="lg:flex dashed justify-between mt-5">
                         <div class="flex items-center gap-8 mb-2 mt-5">
                             <div class="flex gap-3 items-center">
                                 <i class="fa-solid fa-message"></i>

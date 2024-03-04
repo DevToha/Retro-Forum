@@ -14,13 +14,13 @@ const displayLatestPost = AllLatestPost => {
         const postedDate = post.author.posted_date || "No Published Date";
         const latestPostCard = document.createElement('div')
         latestPostCard.classList = `flex gap-[15px]`
-        latestPostCard.innerHTML = `<div class=" rounded-3xl lg:w-[423px] h-[510px] border gap-10 ">
-        <div class="indicator mt-9 ml-[35px]">
+        latestPostCard.innerHTML = `<div class=" rounded-3xl lg:w-[423px] h-[510px] border gap-10 lg:mt-0 mt-6">
+        <div class="indicator mt-9 lg:ml-[35px] ml-16">
             <div class="grid w-[335px] h-[190px] bg-[#12132D08] place-items-center rounded-2xl"><img class ="rounded-2xl" src="${post.cover_image}"
                     alt=""></div>
         </div>
-        <div class="justify-center items-center ml-[18px]">
-            <div class=" lg:pt-6 pt-7 ml-4 lg:mb-0 mb-5">
+        <div class="justify-center items-center lg:ml-[18px]">
+            <div class=" lg:pt-6 pt-7 lg:ml-4 ml-2 lg:mb-0 mb-5">
                 <div class=" flex gap-2 items-center">
                     <i class="fa-regular fa-calendar"></i>
                     <p class="text-gray-500">${postedDate}</p>
