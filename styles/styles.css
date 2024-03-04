@@ -1,5 +1,4 @@
-
-.font-manrope{
+.font-manrope {
     font-family: 'Manrope', sans-serif;
 }
 
@@ -10,7 +9,7 @@
     background: rgba(19, 19, 24, 0.10);
 }
 
-.dashed{
+.dashed {
     border-top: 2px dashed;
     border-color: rgba(18, 19, 45, 0.25);
 }
@@ -21,3 +20,14 @@
                                         <span><i class="fa-solid fa-check-double text-[#1dd100] mr-4"></i></span>Mark as read
                                         <span>(4)</span>
                                     </td> */
+
+
+/* AllLatestPost.forEach(item=> {
+
+        if ( !item.author.designation) {
+
+            item.author.designation="Unknown";
+        }
+    });
+
+console.log(AllLatestPost) */

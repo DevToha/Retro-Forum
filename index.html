@@ -127,8 +127,8 @@
                             Share your favorite opinion and win and wp <br> forum coffee mug!
                         </p>
                         <div class="input mt-2 bg-gray-100 flex items-center rounded-3xl gap-2">
-                            <input type="text" class="grow" placeholder="Search here anything" />
-                            <button
+                            <input id="search-field" type="text" class="grow" placeholder="Search here anything" />
+                            <button onclick="handleSearch()"
                                 class="w-[88px] h-[38px] text-white text-base pb-1 font-semibold rounded-3xl bg-[#797dfc]">
                                 Search
                             </button>
@@ -176,7 +176,14 @@
 
             <!-- <!//--  -->
 
+            <!-- loading  -->
+
+            <div id="loading-spinner" class="text-center hidden">
+                <span class="loading loading-bars loading-lg"></span>
+            </div>
+
             <div class="flex justify-between">
+
                 <div id="post-container">
                     <!-- <div class=" flex gap-8 justify-center rounded-2xl lg:w-[742px] lg:h-[250px] bg-[#F3F3F5]">
 
@@ -329,7 +336,13 @@
                     features allow for a streamlined .</p>
             </div>
 
+
+
             <!-- main part  -->
+
+            <!-- loading  -->
+
+
 
 
             <div id="latest-post-container" class="flex gap-[15px]">
@@ -406,7 +419,7 @@
 
     <!-- script  -->
     <script src="js/api.js"></script>
-    <!-- <script src="js/latest-post-api.js"></script> -->
+    <script src="js/latest-post-api.js"></script>
     <script src="js/total-read.js"></script>
 </body>
 

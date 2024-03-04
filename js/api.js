@@ -1,5 +1,5 @@
-const loadPost = async () => {
-    const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
+const loadPost = async (searchText = '#') => {
+    const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${searchText}`);
     const data = await res.json();
     const AllPost = data.posts
     // console.log(AllPost)
@@ -11,6 +11,7 @@ const loadPost = async () => {
 const displayPost = AllPost => {
 
     const postContainer = document.getElementById('post-container')
+    postContainer.textContent = ''
     // console.log(AllPost)
     AllPost.forEach(post => {
         console.log(post)
@@ -28,7 +29,7 @@ const displayPost = AllPost => {
                     <p class="font-medium"># ${post.category}</p>
                 </div>
                 <div class="flex gap-4 items-center">
-                    <p class="font-medium">${post.author.name}</p>
+                    <p class="font-medium">Author : ${post.author.name}</p>
                 </div>
             </div>
             <div>
@@ -61,10 +62,35 @@ const displayPost = AllPost => {
 
         postContainer.appendChild(postCard)
 
-    })
+    });
+
+    console.log(AllPost)
+
+    toggleLoadingSpinner(false)
 
 }
 
+// handle search button 
 
+function handleSearch() {
+    toggleLoadingSpinner(true)
+    const searchField = document.getElementById('search-field')
+    const searchText = searchField.value
+    console.log(searchText)
+    loadPost(searchText)
+}
+
+// loading-spinner 
+
+const toggleLoadingSpinner = (isLoading) => {
+    const loadingSpinner = document.getElementById('loading-spinner')
+    if (isLoading) {
+        loadingSpinner.classList.remove('hidden')
+
+    }
+    else {
+        loadingSpinner.classList.add('hidden')
+    }
+}
 
 loadPost()
