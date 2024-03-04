@@ -12,17 +12,3 @@
     border-top: 2px dashed;
     border-color: rgba(18, 19, 45, 0.25);
 }
-
-/* // button1.addEventListener('click', () => {
-
-    //     // selectedSeat
-    
-        // const current = document.getElementById('selected-seat');
-        // const currentSeat = current.innerText;
-        // const currentSeatNumber = parseInt(currentSeat);
-        // console.log(currentSeatNumber);
-    
-        // const newSeatNumber = currentSeatNumber + 1;
-    
-        // current.innerText = newSeatNumber
-    // }) */

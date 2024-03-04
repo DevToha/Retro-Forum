@@ -1,4 +1,4 @@
-const loadPost = async (searchText = '#') => {
+const loadPost = async (searchText = '') => {
     const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${searchText}`);
     const data = await res.json();
     const AllPost = data.posts;
@@ -87,9 +87,9 @@ const toggleLoadingSpinner = (isLoading) => {
     if (isLoading) {
         loadingSpinner.classList.remove('hidden')
 
-        setTimeout(() => {
+        // setTimeout(() => {
 
-        }, 2000);
+        // }, 2000);
 
     }
     else {
@@ -97,7 +97,5 @@ const toggleLoadingSpinner = (isLoading) => {
         clearTimeout();
     }
 }
-
-
 
 loadPost()
