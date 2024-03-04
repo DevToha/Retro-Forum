@@ -13,13 +13,13 @@ const displayLatestPost = AllLatestPost => {
         const designation = post.author.designation || "Unknown";
         const postedDate = post.author.posted_date || "No Published Date";
         const latestPostCard = document.createElement('div')
-        latestPostCard.classList = `flex gap-[15px]`
+        latestPostCard.classList = `lg:flex justify-center lg:gap-[65px]`
         latestPostCard.innerHTML = `<div class=" rounded-3xl lg:w-[423px] h-[510px] border gap-10 lg:mt-0 mt-6">
-        <div class="indicator mt-9 lg:ml-[35px] ml-16">
+        <div class="indicator mt-9 lg:ml-[43px] ml-[17px]">
             <div class="grid w-[335px] h-[190px] bg-[#12132D08] place-items-center rounded-2xl"><img class ="rounded-2xl" src="${post.cover_image}"
                     alt=""></div>
         </div>
-        <div class="justify-center items-center lg:ml-[18px]">
+        <div class="justify-center items-center lg:ml-[18px] ml-[10px]">
             <div class=" lg:pt-6 pt-7 lg:ml-4 ml-2 lg:mb-0 mb-5">
                 <div class=" flex gap-2 items-center">
                     <i class="fa-regular fa-calendar"></i>
@@ -27,7 +27,7 @@ const displayLatestPost = AllLatestPost => {
                 </div>
                 <div>
                     <h2 class="card-title font-extrabold text-[20px] mb-2">${post.title}</h2>
-                    <p class="mb-4 text-gray-500">${post.description}</p>
+                    <p class="mb-4 text-gray-500 w-[360px]">${post.description}</p>
                 </div>
 
                 <div class="flex gap-3 items-center">

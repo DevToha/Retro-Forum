@@ -11,13 +11,13 @@ const displayPost = AllPost => {
 
     AllPost.forEach((post, index) => {
         const postCard = document.createElement('div');
-        postCard.classList = `lg:flex gap-8 justify-center rounded-2xl lg:w-[742px] w-[450px] lg:h-[250px] bg-[#F3F3F5] pb-1`;
+        postCard.classList = `lg:flex gap-8 justify-center rounded-2xl lg:w-[742px] lg:h-[250px] bg-[#F3F3F5] pb-1 mb-7`;
 
         const buttonId = `button-${index}`;
         const buttonClickFunction = `handleButtonClick${index + 1}()`;
 
         postCard.innerHTML = `
-            <div class="indicator mt-9 lg:ml-0 ml-40">
+            <div class="indicator mt-9 lg:ml-0 ml-[120px]">
                 <span class="indicator-item mt-1 mr-2 badge ${post.isActive ? "bg-green-500" : "bg-red-500"}"></span>
                 <div class="grid w-[75px] h-[70px] bg-base-300 place-items-center rounded-xl">
                     <img class="rounded-xl" src="${post.image}" alt="">
