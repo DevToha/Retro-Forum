@@ -13,12 +13,12 @@ const displayPost = AllPost => {
         const postCard = document.createElement('div');
         postCard.classList = `flex gap-8 justify-center rounded-2xl lg:w-[790px] lg:h-[250px] bg-[#F3F3F5] mb-8`;
 
-        const buttonId = `button-${index}`; // Unique ID for each button
-        const buttonClickFunction = `handleButtonClick${index + 1}()`; // Unique onclick function for each button
+        const buttonId = `button-${index}`;
+        const buttonClickFunction = `handleButtonClick${index + 1}()`;
 
         postCard.innerHTML = `
             <div class="indicator mt-9">
-                <span class="indicator-item mt-1 mr-2 badge bg-[${post.isActive ? '#10B981' : '#EF4444'}]"></span>
+                <span class="indicator-item mt-1 mr-2 badge ${post.isActive ? "bg-green-500" : "bg-red-500"}"></span>
                 <div class="grid w-[75px] h-[70px] bg-base-300 place-items-center rounded-xl">
                     <img class="rounded-xl" src="${post.image}" alt="">
                 </div>
